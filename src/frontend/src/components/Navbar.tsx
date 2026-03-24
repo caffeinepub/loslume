@@ -10,19 +10,22 @@ const navLinks = [
   { label: "Our Socials", to: "/socials" },
 ];
 
+const LOGO_PATH =
+  "/assets/uploads/screenshot_2026-03-25-01-40-14-749_jp.ne.ibis.ibispaint.app-019d21ee-ef8c-75eb-8652-d9168779b15f-1.jpg";
+
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const location = useLocation();
 
   return (
     <header className="sticky top-0 z-50 bg-offwhite/95 backdrop-blur-sm border-b border-border shadow-soft">
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link
-          to="/"
-          className="font-display text-2xl font-bold text-brown tracking-wide hover:text-golden transition-colors"
-          data-ocid="nav.link"
-        >
-          LosLume
+      <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
+        <Link to="/" data-ocid="nav.link">
+          <img
+            src={LOGO_PATH}
+            alt="LosLume logo"
+            className="h-12 w-auto object-contain rounded-sm"
+          />
         </Link>
 
         <nav
