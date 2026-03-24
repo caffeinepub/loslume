@@ -11,7 +11,7 @@ const navLinks = [
 ];
 
 const LOGO_PATH =
-  "/assets/uploads/screenshot_2026-03-25-01-40-14-749_jp.ne.ibis.ibispaint.app-019d21ee-ef8c-75eb-8652-d9168779b15f-1.jpg";
+  "/assets/uploads/untitled3_20260325035606-019d21f4-c12a-7159-b98f-47abac3939f0-1.png";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
